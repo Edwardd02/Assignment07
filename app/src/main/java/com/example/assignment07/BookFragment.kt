@@ -11,7 +11,7 @@ import androidx.lifecycle.ViewModelProvider
 class BookFragment : Fragment() {
     private lateinit var title: TextView
     private lateinit var author: TextView
-    private lateinit var textViewModel: TextViewModel
+    lateinit var textViewModel: TextViewModel
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         textViewModel = ViewModelProvider(requireActivity())[TextViewModel::class.java]
